@@ -1,6 +1,6 @@
 # 设置变量 
-SET(LIBHELLO_SRC ./my_dll.h ./my_dll.cpp) 
-SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../lib_out) # 第一个参数为你需要构建的dll的名字，第二个为类型 
+SET(LIBHELLO_SRC ./src/my_dll.h ./src/my_dll.cpp) 
+SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../bin/) # 第一个参数为你需要构建的dll的名字，第二个为类型 
 
 ADD_LIBRARY(my_dll SHARED ${LIBHELLO_SRC}) 
 
