@@ -6,7 +6,7 @@ PROJECT(demo)
 ADD_SUBDIRECTORY(lib)
 
 # 设置源码路径
-SET(LIBHELLO_SRC ./main.cpp)
+SET(LIBHELLO_SRC ./src/main.cpp)
 
 # 设置C/C++标准
 set(CMAKE_C_STANDARD 11)
