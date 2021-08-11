@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.16) 
+
+PROJECT(monitor-network)
+
+# 添加子项目
+ADD_SUBDIRECTORY(lib)
+
+# 设置源码路径
+SET(LIBHELLO_SRC ./src/main.cpp)
+
+# 设置C/C++标准
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
+# 输出路径
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+
+ADD_EXECUTABLE(${PROJECT_NAME} ${LIBHELLO_SRC})
+
+
+
